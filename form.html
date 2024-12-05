@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mt-5">
+                <br>
+                <h3>Arithmatic operation Using Function</h3>
+                <form name="myform" style="border: 2px double #000;padding: 30px;">
+                    Number 1 : 
+                    <input type="number" name="n1" class="form-control mb-3"><br><br>
+                    Number 2 :
+                    <input type="number" name="n2" class="form-control mb-3"><br><br>
+                    Result :
+                    <input type="number" name="res" class="form-control mb-3"><br><br>
+
+                    <div class="text-center">
+                        <button class="btn btn-danger" type="button" onclick="add()"> + </button>
+                        <button class="btn btn-danger" type="button" onclick="sub()"> - </button>
+                        <button class="btn btn-danger" type="button" onclick="mult()"> * </button>
+                        <button class="btn btn-danger" type="button" onclick="div()"> / </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var num1,num2,result;
+
+        function add()
+        {
+            num1=parseInt(document.myform.n1.value); //1
+            num2=parseInt(document.myform.n2.value); //2
+            result=num1+num2;
+
+            document.myform.res.value=result.toFixed(2);
+        }
+
+        function sub()
+        {
+            num1=parseInt(document.myform.n1.value); //1
+            num2=parseInt(document.myform.n2.value); //2
+            result=num1-num2;
+
+            document.myform.res.value=result.toFixed(2);
+        }
+
+        function mult()
+        {
+            num1=parseInt(document.myform.n1.value); //1
+            num2=parseInt(document.myform.n2.value); //2
+            result=num1*num2;
+
+            document.myform.res.value=result.toFixed(2);
+        }
+        
+        function div()
+        {
+            num1=parseInt(document.myform.n1.value); //1
+            num2=parseInt(document.myform.n2.value); //2
+            result=num1/num2;
+
+            document.myform.res.value=result.toFixed(2);
+        }
+    </script>
+</body>
+</html>
