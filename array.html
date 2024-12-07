@@ -33,7 +33,79 @@
             }
             document.write("</ul>");
             document.write("Total of Sum " + sum);
+            document.write("<br>" + "<br>");
     </script>
+
+    <!-- array modify and delete -->
+     <script>
+        var a = ["Dakshata","Vaishnavi",20,"Kunika"];
+        document.write(a + "<br>");
+        a[2] = 23; //update value
+        document.write(a + "<br>");
+        delete a[1]; //delete index value
+        document.write(a + "<br>" + "<br>");
+     </script>
+
+     <!-- Sorting and Reverse -->
+        <script>
+            var a = ["Kunika","vaishnavi","Dakshata","Gayatri","Samrudhi"];
+            document.write(a + "<br>");
+            a.sort(); //a to z asc
+            document.write(a + "<br>");
+            a.reverse(); //reverse array value
+            document.write(a + "<br>" + "<br>");
+        </script>
+
+      <!-- Pop and Push -->
+        <script>
+            var a = ["Samrudhi","Gaytri","Sakshi","Kunika"]
+            document.write(a + "<br>");
+            a.pop();
+            a.pop();
+            a.pop();
+            document.write(a + "<br>");
+            a.push("Dakshata");
+            a.push("Akshari");
+            document.write(a + "<br>" + "<br>");
+        </script>
+        
+        <!-- Shift and unshift -->
+        <script>
+            var a = ["Shital","Sakshi","Kunika","Vaishnavi"];
+            document.write(a + "<br>");
+            a.shift();
+            document.write(a + "<br>");
+            a.unshift("Priti");
+            a.unshift("Akshari");
+            document.write(a + "<br>" + "<br>")
+        </script>
+
+        <!-- Concat and Join -->
+        <script>
+            var a = ["Priti","Akshari","Daya","Tanu","Manu"];
+            var b = ["Siddhi","Prisha","Shital","Dakshata","Kunika"];
+            var c = a.concat(b);
+            document.write(c + "<br>");
+            var d = c.join("/");
+            document.write(d + "<br>" + "<br>");
+        </script>
+
+        <!-- slice (start,end) -->
+        <script>
+            var a =["Priti","Akshari","Daya","Tanu","Manu"];
+            document.write(a + "<br>");
+
+            var b = a.slice(1,4);
+            document.write(b + "<br>" + "<br>");
+        </script>
+
+        <!-- splice (index , how many delete,"newvalue") -->
+        <script>
+            var a = ["HTML","CSS","JAVA","PYTHON","JS"];
+            document.write(a + "<br>");
+            a.splice(1,2,"C++","BOOTSTRAP");
+            document.write(a + "<br>" + "<br>");
+        </script>
 
 </body>
 </html>
